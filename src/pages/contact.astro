@@ -1,9 +1,9 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import Landing from "../components/Landing.jsx";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import ContactSite from "../components/Contact.jsx";
 import { ViewTransitions } from "astro:transitions";
 import "@fontsource-variable/lexend";
 ---
@@ -22,7 +22,7 @@ import "@fontsource-variable/lexend";
 	<body class="font-serif">
 		<Header />
 		<main>
-			<Landing client:load />
+			<ContactSite />
 		</main>
 		<Footer />
 	</body></html
